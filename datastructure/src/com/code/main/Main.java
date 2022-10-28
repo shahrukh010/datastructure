@@ -13,8 +13,11 @@ public class Main {
 		list.addNode(30);
 		list.addNode(40);
 		list.addNode(50);
+		list.addNode(70);
 
-		list.reverseNode();
-		list.printNode();
+//		list.reverseNode();
+//		list.printNode();
+		int result = list.middleElement();
+		System.out.println(result);
 	}
 }

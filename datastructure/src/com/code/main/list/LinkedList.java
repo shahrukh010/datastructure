@@ -59,4 +59,16 @@ public class LinkedList {
 		this.first = q;
 	}
 
+	public int middleElement() {
+
+		Node slow = this.first;
+		Node fast = this.first;
+		while (fast != null && fast.next != null) {
+
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		return slow.data;
+	}
+
 }
