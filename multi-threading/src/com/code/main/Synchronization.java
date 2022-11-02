@@ -4,7 +4,7 @@ class Worker {
 
 	private static int counter = 0;
 
-	public static synchronized void increment() {
+	public static  void increment() {
 		counter++;
 	}
 
