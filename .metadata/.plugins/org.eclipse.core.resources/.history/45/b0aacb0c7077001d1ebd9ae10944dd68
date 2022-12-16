@@ -1,0 +1,56 @@
+package com.sk.service;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.sk.entity.User;
+import com.sk.repository.UserRepository;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private UserRepository userRepository;
+
+	public List<User> getAllUserInfo() {
+
+
+		 List list = userRepository.findAllUserDetailsFromElastic();
+	}
+
+	public List<User> getUserDataByName(String userName) {
+		return userRepository.findAllUserDataByNameFromElastic(userName);
+	}
+
+	public List<User> findAllUserCharDataByName(String userName) {
+		return userRepository.findAllUserCharDataByName(userName);
+	}
+
+	public List<User> getUserDataByNameAndAddress(String userName, String address) {
+		return userRepository.findAllUserDataByNameAndAddressFromElstic(userName, address);
+	}
+
+	public String index(String indexName) throws IOException {
+
+		return userRepository.index(indexName);
+	}
+
+	public String updateId(String id, String loc) throws IOException {
+		return userRepository.updateId(id, loc);
+	}
+
+	public String deleteIndex(String index) throws IOException {
+		return userRepository.deleteIndex(index);
+	}
+
+	public String deleteRecord(String id) throws IOException {
+		return userRepository.deleteRecord(id);
+	}
+
+	public double getSumOfData(String name) {
+		return userRepository.getSumOfData(name);
+	}
+
+}
