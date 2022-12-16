@@ -1,0 +1,22 @@
+package com.code.main;
+
+import com.code.main.array.Array;
+
+public class Main {
+	
+	
+	public static void main(String...strings) {
+		
+		
+		Array array = new Array();
+//		int[] input= {10,5,20,8};
+//		int[] input= {40,8,50,100,-1};
+//		int[] input= {10,10,10};
+		int[] input = {5,20,12,20,10};
+//		int result = array.findLargestIndex(input);
+		int result = array.secondLargestElementIndex(input);
+		System.out.println(result);
+		
+	}
+
+}

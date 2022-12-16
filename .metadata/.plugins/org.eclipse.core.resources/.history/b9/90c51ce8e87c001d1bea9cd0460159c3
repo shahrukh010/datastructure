@@ -1,0 +1,105 @@
+package com.code.main;
+
+import com.code.main.array.Array;
+
+public class Main {
+	
+	
+	public static void main(String...strings) {
+		
+		 Mathmatics math = new Mathmatics();
+
+	        int n = 9235;
+	            n = 12345;
+	    //    int result = math.countDigit(n);
+	   //     System.out.println(result);
+	       
+	            n = 121;
+	            n = 78987;
+	            n = 9235;
+	            
+	  //     boolean result = math.isPalindrome(n);
+	  //     System.out.println(result);
+
+	            n = 5;
+	            n = 6;
+	            n = 1;
+	            n = 0;
+//	        int result = math.factorial(n);
+	 //       System.out.println(result);
+	 
+	            n = 20;
+	            n = 251;
+//	            int result = math.countTrailingZero(n);
+	 //           System.out.println(result);
+	 //
+
+	            int a = 2,b=4;
+	                a = 100;
+	                b=200;
+//	                a = 7;
+	 //               b = 13;
+//	            int result = math.gcd(a,b);
+	 //           System.out.println(result);
+	 //
+
+	            a = 4;
+	            b = 6;
+	            a = 12;
+	            b = 15;
+
+//	            int result = math.lcm(a,b);
+	 //           System.out.println(result);
+	 //
+	            int number=13;
+	            number = 12;
+	            number = 101;
+	            number = 25;
+	            number = 65;
+	            number = 7;
+	            number = 121;
+	            number = 1031;
+
+	            //boolean result = math.isPrime(number);
+	            //System.out.println(result);
+	            //
+	            
+	            number = 12;
+	            number = 315;
+	            number = 13;
+	            number = 84;
+	            number = 450;
+	            
+//	          java.util.List result = math.primeFactor(number);
+	 //         System.out.println(result);
+	 
+
+	  //          number = 15;
+	 //           number = 100;
+	            number = 7;
+//	            java.util.List result = math.allDivisor(number);
+	 //           System.out.println(result);
+
+	            number = 16;
+	            boolean result[] = math.printAllPrime(number);
+
+	            for(int index = 2; index < result.length; index ++)
+	                if(!result[index])
+	                    System.out.print(index+" ");
+
+
+	    }
+
+		
+		Array array = new Array();
+//		int[] input= {10,5,20,8};
+//		int[] input= {40,8,50,100,-1};
+//		int[] input= {10,10,10};
+		int[] input = {5,20,12,20,10};
+//		int result = array.findLargestIndex(input);
+		int result = array.secondLargestElementIndex(input);
+		System.out.println(result);
+		
+	}
+
+}
